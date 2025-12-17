@@ -1,18 +1,16 @@
-/* 
-AMBERLY BRANDING 
-*/
+/* =========================
+   AMBERLY · CUSTOM STYLES
+========================= */
 
 :root {
     --amberly-gold: #C8B273;
     --amberly-black: #000000;
+    --amberly-soft: #F5EEE6;
 }
 
-/* Tipografía */
-body {
-    font-family: 'Poppins', sans-serif;
-    color: #222;
-}
-
+/* =========================
+   TIPOGRAFÍA DE MARCA
+========================= */
 h1, h2, h3, .logo {
     font-family: 'Playfair Display', serif;
     letter-spacing: 1px;
@@ -24,68 +22,94 @@ h1, h2, h3, .logo {
     font-weight: 600;
 }
 
-/* Navbar */
-.navbar-light .nav-link {
-    color: #000;
-    font-weight: 500;
-}
-
-.navbar-light .nav-link:hover {
-    color: var(--amberly-gold);
-}
-
-/* Botón Amberly */
+/* =========================
+   BOTÓN AMBERLY
+========================= */
 .btn-amberly {
     background-color: var(--amberly-gold);
     color: #000;
-    border: none;
-    padding: 8px 22px;
     border-radius: 25px;
+    padding: 8px 22px;
     font-weight: 500;
+    transition: background-color 0.3s ease;
 }
 
 .btn-amberly:hover {
-    background-color: #b8a45f;
-    color: #000;
+    background-color: #6f6f6f;
 }
 
-/* Títulos del banner */
-.amberly-title {
-    color: var(--amberly-gold);
-    font-weight: 600;
-}
-
-.amberly-subtitle {
-    color: #000;
-    font-weight: 400;
-}
-
-/* Precios */
-.text-muted.text-right {
-    color: var(--amberly-gold) !important;
-    font-weight: 600;
-}
 /* =========================
-   SECCIÓN DESTACADOS AMBERLY
+   CATEGORÍAS AMBERLY
 ========================= */
+.amberly-categories {
+    background-color: #fff;
+}
 
+/* Tarjeta */
+.category-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+}
+
+/* Imagen circular */
+.category-img-wrapper {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+.category-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.category-card:hover .category-img-wrapper {
+    transform: scale(1.07);
+}
+
+/* Texto */
+.category-name {
+    font-size: 1.1rem;
+    color: #000;
+}
+
+/* Botón enlace */
+.category-btn {
+    color: var(--amberly-gold);
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.category-btn:hover {
+    color: #000;
+}
+
+/* =========================
+   DESTACADOS AMBERLY
+========================= */
 .featured-amberly {
-    background-color: #6c757d1a; /* Gris claro con opacidad */
+    background-color: rgba(0,0,0,0.04);
 }
 
 .featured-title {
-    color: #CE9B9B;
+    color: var(--amberly-gold);
     font-family: 'Playfair Display', serif;
     letter-spacing: 2px;
     margin-bottom: 12px;
 }
 
 .featured-text {
-    color: #6f6f6f;
     font-size: 0.95rem;
+    color: #6f6f6f;
 }
 
-/* Cards */
+/* Cards producto */
 .amberly-card {
     border: none;
     border-radius: 18px;
@@ -101,17 +125,14 @@ h1, h2, h3, .logo {
     border-radius: 18px 18px 0 0;
 }
 
-/* Contenido producto */
 .product-name {
-    color: #333;
     font-weight: 500;
-    margin-bottom: 6px;
+    color: #333;
 }
 
 .product-price {
-    color: #C8B273;
+    color: var(--amberly-gold);
     font-weight: 600;
-    margin-bottom: 8px;
 }
 
 .product-desc {
@@ -119,85 +140,58 @@ h1, h2, h3, .logo {
     color: #777;
 }
 
-/* Footer */
-#tempaltemo_footer {
-    background-color: #000;
-}
-
-#tempaltemo_footer h2 {
-    color: var(--amberly-gold);
-}
-
-#tempaltemo_footer a:hover {
-    color: var(--amberly-gold);
-}
-
-/* 
-FOOTER AMBERLY 
-*/
-
+/* =========================
+   FOOTER AMBERLY
+========================= */
 #amberly_footer {
-    background-color: #F5EEE6;
-    color: #000;
-    font-family: 'Poppins', sans-serif;
+    background-color: var(--amberly-soft);
 }
 
-.footer-logo {
-    font-family: 'Playfair Display', serif;
-    color: #000;
-    letter-spacing: 5px;
-}
-
-/* 
-TITULOS FOOTER AMBERLY*/
-
+/* Títulos footer */
 #amberly_footer .footer-logo,
 #amberly_footer .footer-title {
-    color: #C8B273 !important;
+    color: var(--amberly-gold);
     font-family: 'Playfair Display', serif;
-    margin-bottom: 20px; /* espacio entre título y contenido */
     letter-spacing: 5px;
+    margin-bottom: 10px;
     font-weight: 500;
 }
 
-
-.footer-text li,
-.footer-links li {
-    margin-bottom: 15px;
+/* Línea debajo del título */
+#amberly_footer .footer-logo::after,
+#amberly_footer .footer-title::after {
+    content: "";
+    display: block;
+    width: 60px;          /* largo*/
+    height: 2px;          /* Grosor linea*/
+    background-color: var(--amberly-gold);
+    margin-top: 10px;     /* espacio título → línea */
 }
 
+
+/* Links */
 .footer-text a,
 .footer-links a {
-    color: #000;
     text-decoration: none;
+    line-height: 2.2; /*  interlineado */
 }
 
 .footer-text a:hover,
 .footer-links a:hover {
-    color: #C8B273;
+    color: var(--amberly-gold);
 }
 
-/* Íconos dorados */
+/* Íconos */
 .footer-text i {
-    color: #C8B273;
+    color: var(--amberly-gold);
 }
 
-/* Columnas del footer */
+/* Columnas */
 #amberly_footer .footer-col {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-@media (min-width: 768px) {
-    #amberly_footer .footer-col {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
+    padding: 0 20px;
 }
 
 .footer-copy {
     font-size: 0.9rem;
     color: #555;
 }
-
