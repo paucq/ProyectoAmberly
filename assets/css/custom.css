@@ -1,3 +1,203 @@
-/*
-Custom Css
+/* 
+AMBERLY BRANDING 
 */
+
+:root {
+    --amberly-gold: #C8B273;
+    --amberly-black: #000000;
+}
+
+/* Tipografía */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+}
+
+h1, h2, h3, .logo {
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 1px;
+}
+
+/* Logo */
+.logo {
+    color: var(--amberly-gold) !important;
+    font-weight: 600;
+}
+
+/* Navbar */
+.navbar-light .nav-link {
+    color: #000;
+    font-weight: 500;
+}
+
+.navbar-light .nav-link:hover {
+    color: var(--amberly-gold);
+}
+
+/* Botón Amberly */
+.btn-amberly {
+    background-color: var(--amberly-gold);
+    color: #000;
+    border: none;
+    padding: 8px 22px;
+    border-radius: 25px;
+    font-weight: 500;
+}
+
+.btn-amberly:hover {
+    background-color: #b8a45f;
+    color: #000;
+}
+
+/* Títulos del banner */
+.amberly-title {
+    color: var(--amberly-gold);
+    font-weight: 600;
+}
+
+.amberly-subtitle {
+    color: #000;
+    font-weight: 400;
+}
+
+/* Precios */
+.text-muted.text-right {
+    color: var(--amberly-gold) !important;
+    font-weight: 600;
+}
+/* =========================
+   SECCIÓN DESTACADOS AMBERLY
+========================= */
+
+.featured-amberly {
+    background-color: #6c757d1a; /* Gris claro con opacidad */
+}
+
+.featured-title {
+    color: #CE9B9B;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.featured-text {
+    color: #6f6f6f;
+    font-size: 0.95rem;
+}
+
+/* Cards */
+.amberly-card {
+    border: none;
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease;
+}
+
+.amberly-card:hover {
+    transform: translateY(-6px);
+}
+
+.amberly-card img {
+    border-radius: 18px 18px 0 0;
+}
+
+/* Contenido producto */
+.product-name {
+    color: #333;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.product-price {
+    color: #C8B273;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.product-desc {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* Footer */
+#tempaltemo_footer {
+    background-color: #000;
+}
+
+#tempaltemo_footer h2 {
+    color: var(--amberly-gold);
+}
+
+#tempaltemo_footer a:hover {
+    color: var(--amberly-gold);
+}
+
+/* 
+FOOTER AMBERLY 
+*/
+
+#amberly_footer {
+    background-color: #F5EEE6;
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer-logo {
+    font-family: 'Playfair Display', serif;
+    color: #000;
+    letter-spacing: 5px;
+}
+
+/* 
+TITULOS FOOTER AMBERLY*/
+
+#amberly_footer .footer-logo,
+#amberly_footer .footer-title {
+    color: #C8B273 !important;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px; /* espacio entre título y contenido */
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+
+
+.footer-text li,
+.footer-links li {
+    margin-bottom: 15px;
+}
+
+.footer-text a,
+.footer-links a {
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-text a:hover,
+.footer-links a:hover {
+    color: #C8B273;
+}
+
+/* Íconos dorados */
+.footer-text i {
+    color: #C8B273;
+}
+
+/* Columnas del footer */
+#amberly_footer .footer-col {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media (min-width: 768px) {
+    #amberly_footer .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.footer-copy {
+    font-size: 0.9rem;
+    color: #555;
+}
+
