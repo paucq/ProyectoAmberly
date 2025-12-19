@@ -38,9 +38,70 @@ h1, h2, h3, .logo {
     background-color: #6f6f6f;
 }
 
+/* Carrusel */
+.hero-slide {
+    position: relative;
+    width: 100%;
+    height: 85vh;   /* aumenta la altura */
+    min-height: 560px;
+}
+
+/* Imagen ocupa todo */
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 40%;
+}
+
+/* Capa oscura elegante */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+}
+
+/* Contenido de texto */
+.hero-content {
+    max-width: 600px;
+    margin-left: 10%;
+    color: #fff;
+}
+
+/* Tipografía Amberly */
+.amberly-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.amberly-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-slide {
+        height: 60vh;
+    }
+
+    .hero-content {
+        margin: 0 20px;
+        text-align: center;
+    }
+
+    .amberly-title {
+        font-size: 2.5rem;
+    }
+}
+
 /* =========================
    CATEGORÍAS AMBERLY
 ========================= */
+
 .amberly-categories {
     background-color: #fff;
 }
@@ -55,8 +116,8 @@ h1, h2, h3, .logo {
 
 /* Imagen circular */
 .category-img-wrapper {
-    width: 220px;
-    height: 220px;
+    width: 275px;
+    height: 275px;
     border-radius: 50%;
     overflow: hidden;
     transition: transform 0.4s ease;
