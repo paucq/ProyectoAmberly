@@ -151,6 +151,30 @@ h1, h2, h3, .logo {
     color: #000;
 }
 
+/* Estado normal: contorno negro */
+.product-overlay a.btn {
+    background-color: transparent !important;
+    border: 1.5px solid #000000 !important;
+    color: #000000 !important;
+}
+
+/* Iconos negros */
+.product-overlay a.btn i {
+    color: #000000 !important;
+}
+
+/* Hover: fondo rosado, icono negro */
+.product-overlay a.btn:hover {
+    background-color: #CE9B9B !important;
+    border-color: #CE9B9B !important;
+    color: #000000 !important;
+}
+
+.product-overlay a.btn:hover i {
+    color: #000000 !important;
+}
+
+
 /* =========================
    DESTACADOS AMBERLY
 ========================= */
