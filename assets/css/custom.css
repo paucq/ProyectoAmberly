@@ -241,6 +241,15 @@ h1, h2, h3, .logo {
     transform: scale(1.25);
 }
 
+.instagram-icon {
+    display: inline-block;
+}
+
+.contact-form-offset {
+    padding-top: 1rem;
+}
+
+
 
 /* =========================
    FOOTER AMBERLY
