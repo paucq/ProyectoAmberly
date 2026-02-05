@@ -115,7 +115,8 @@
             <div class="row">
                 <div class="col-lg-5 mt-5">
                     <div class="product-image-zoom">
-                        <img src="assets/img/AretasBrisa.jpeg" alt="Accesorio Amberly" class="img-fluid zoom-img">
+                        <img id="product-image" src="assets/img/AretasBrisa.jpeg" alt="Accesorio Amberly"
+                            class="img-fluid zoom-img">
                     </div>
                 </div>
                 <!-- col end -->
@@ -124,20 +125,13 @@
                         <div class="card-body">
 
                             <!-- Nombre del producto -->
-                            <h1 class="h2 mb-2">Aretes Brisa ✨</h1>
+                            <h1 id="product-name" class="h2 mb-2">Aretes Brisa ✨</h1>
 
                             <!-- Precio -->
-                            <p class="h3 text-muted mb-3">$17.000 COP</p>
+                            <p id="product-price" class="h3 text-muted mb-3">$17.000 COP</p>
 
                             <!-- Rating -->
-                            <p class="mb-3">
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-warning"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <i class="fa fa-star text-secondary"></i>
-                                <span class="text-muted ms-2">4.8 (36 reseñas)</span>
-                            </p>
+                            <p id="product-rating" class="mb-3"></p>
 
                             <!-- Marca -->
                             <p class="mb-3">
@@ -147,7 +141,7 @@
 
                             <!-- Descripción -->
                             <h6 class="mt-4">Descripción</h6>
-                            <p class="text-muted">
+                            <p id="product-description" class="text-muted">
                                 Los Aretes Brisa están diseñados para aportar un toque delicado y femenino a tu día a
                                 día.
                                 Su diseño minimalista los hace perfectos para cualquier ocasión, combinando elegancia y
@@ -645,6 +639,56 @@
         });
     </script>
     <!-- End Slider Script -->
+
+    <script>
+        const productos = {
+            "set-flor": {
+                nombre: "Set de Flor ✨",
+                precio: "$30.000 COP",
+                imagen: "assets/img/Setflor.jpg",
+                estrellas: 4,
+                descripcion: "Un set delicado y elegante, ideal para regalar o complementar tus looks diarios."
+            },
+
+            "aretes-brisa": {
+                nombre: "Aretes Brisa ✨",
+                precio: "$17.000 COP",
+                imagen: "assets/img/AretasBrisa.jpeg",
+                estrellas: 3,
+                descripcion: "Diseño delicado para un estilo suave y femenino."
+            },
+
+            "pulsera-lazo": {
+                nombre: "Pulsera de Lazo ✨",
+                precio: "$14.000 COP",
+                imagen: "assets/img/ManillaLazo.jpeg",
+                estrellas: 4,
+                descripcion: "Ligera y elegante, perfecta para cualquier ocasión."
+            }
+
+        };
+
+        // Leer el ID desde la URL
+        const params = new URLSearchParams(window.location.search);
+        const id = params.get("id");
+
+        // Cargar el producto correcto
+        if (productos[id]) {
+            document.getElementById("product-name").innerText = productos[id].nombre;
+            document.getElementById("product-price").innerText = productos[id].precio;
+            document.getElementById("product-image").src = productos[id].imagen;
+            document.getElementById("product-description").innerText = productos[id].descripcion;
+
+            let stars = "";
+            for (let i = 1; i <= 5; i++) {
+                stars += i <= productos[id].estrellas
+                    ? '<i class="fa fa-star text-warning"></i>'
+                    : '<i class="fa fa-star text-secondary"></i>';
+            }
+            document.getElementById("product-rating").innerHTML = stars;
+        }
+    </script>
+
 
 </body>
 

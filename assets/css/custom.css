@@ -225,6 +225,18 @@ h1, h2, h3, .logo {
     color: #777;
 }
 
+.product-link {
+    text-decoration: none !important;
+    color: inherit;
+    display: block;
+}
+
+.product-link:hover {
+    text-decoration: none !important;
+    color: inherit;
+}
+
+
 /* ===== IMAGEN PRODUCTO AMBERLY ===== */
 .product-image-zoom {
     overflow: hidden;
