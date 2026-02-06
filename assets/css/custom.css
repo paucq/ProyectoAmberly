@@ -261,6 +261,29 @@ h1, h2, h3, .logo {
     padding-top: 1rem;
 }
 
+/* Botones Amberly - estado inicial */
+.amberly-btn,
+.amberly-outline {
+    background-color: transparent;
+    color: #000;
+    border: 1px solid #000;
+    transition: all 0.3s ease;
+}
+
+/* Hover / focus */
+.amberly-btn:hover,
+.amberly-outline:hover,
+.amberly-btn:focus,
+.amberly-outline:focus {
+    background-color: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+/* Opcional: quitar glow azul de Bootstrap */
+.btn:focus {
+    box-shadow: none;
+}
 
 
 /* =========================
