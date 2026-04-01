@@ -111,24 +111,24 @@
 
             <div class="col-lg-3">
                 <h1 class="h2 pb-4">Categorías</h1>
-                <ul class="list-unstyled templatemo-accordion">
+                <ul class="list-unstyled templatemo-accordion" id="category-filter">
                     <li class="pb-2">
-                        <a href="pulseras.html" style="z-index:9999; position:relative;">
-                            Pulseras
-                        </a>
-
+                        <a class="category-link active" href="#" data-filter="all">Todos</a>
                     </li>
                     <li class="pb-2">
-                        <a class="h5 text-decoration-none" href="#">Anillos</a>
+                        <a class="category-link" href="#" data-filter="pulseras">Pulseras</a>
                     </li>
                     <li class="pb-2">
-                        <a class="h5 text-decoration-none" href="#">Aretes</a>
+                        <a class="category-link" href="#" data-filter="anillos">Anillos</a>
                     </li>
                     <li class="pb-2">
-                        <a class="h5 text-decoration-none" href="#">Collares</a>
+                        <a class="category-link" href="#" data-filter="aretes">Aretes</a>
                     </li>
                     <li class="pb-2">
-                        <a class="h5 text-decoration-none" href="#">Conjuntos</a>
+                        <a class="category-link" href="#" data-filter="collares">Collares</a>
+                    </li>
+                    <li class="pb-2">
+                        <a class="category-link" href="#" data-filter="conjuntos">Conjuntos</a>
                     </li>
                 </ul>
             </div>
@@ -138,7 +138,7 @@
                     <div class="col-md-6">
                         <ul class="list-inline shop-top-menu pb-3 pt-1">
                             <li class="list-inline-item">
-                                <a class="h3 text-dark text-decoration-none mr-3" href="#">All</a>
+                                <a class="h3 text-dark text-decoration-none mr-3" href="#" id="filter-all-top">Todos</a>
                             </li>
                         </ul>
                     </div>
@@ -152,11 +152,11 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-md-4">
+                <div class="row" id="product-grid">
+                    <div class="col-md-4 product-item" data-category="aretes">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="assets/img/AretasBrisa.jpeg">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/AretasBrisa.jpeg" alt="Aretes Brisa">
                                 <div
                                     class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
@@ -217,11 +217,11 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 product-item" data-category="aretes">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
                                 <a href="shop-single.html?id=trio-candongas">
-                                    <img class="card-img rounded-0 img-fluid" src="assets/img/SetCandongas.png">
+                                    <img class="card-img rounded-0 img-fluid" src="assets/img/SetCandongas.png" alt="Trío Candongas">
                                 </a>
                                 <div
                                     class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
@@ -282,7 +282,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 product-item" data-category="collares">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
 
@@ -355,10 +355,10 @@
                     </div>
 
 
-                    <div class="col-md-4">
+                    <div class="col-md-4 product-item" data-category="collares">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="assets/img/Cadena de Luna.jpeg">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/Cadena de Luna.jpeg" alt="Cadena de Luna">
                                 <div
                                     class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
@@ -401,10 +401,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 product-item" data-category="conjuntos">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="assets/img/Setflor.jpg">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/Setflor.jpg" alt="Set de Flor">
                                 <div
                                     class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
@@ -445,10 +445,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 product-item" data-category="collares">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="assets/img/Cadena de Corazón.jpeg">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/Cadena de Corazón.jpeg" alt="Cadena de Corazón">
                                 <div
                                     class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
@@ -491,10 +491,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 product-item" data-category="pulseras">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="assets/img/PulseraTrebol.jpeg">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/PulseraTrebol.jpeg" alt="Pulsera Trébol">
                                 <div
                                     class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
@@ -537,10 +537,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 product-item" data-category="anillos">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="assets/img/Anillo.jpg">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/Anillo.jpg" alt="Anillo de Rodio">
                                 <div
                                     class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
@@ -583,10 +583,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 product-item" data-category="pulseras">
                         <div class="card mb-4 product-wap rounded-0">
                             <div class="card rounded-0">
-                                <img class="card-img rounded-0 img-fluid" src="assets/img/ManillaLazo.jpeg">
+                                <img class="card-img rounded-0 img-fluid" src="assets/img/ManillaLazo.jpeg" alt="Pulsera de Lazo">
                                 <div
                                     class="card-img-overlay rounded-0 product-overlay d-flex align-items-center justify-content-center">
                                     <ul class="list-unstyled">
@@ -680,11 +680,11 @@
                 <div class="col-md-4 pt-5 footer-col">
                     <h2 class="h2 footer-title">CATEGORÍAS</h2>
                     <ul class="list-unstyled footer-links">
-                        <li><a href="#">Pulseras</a></li>
-                        <li><a href="#">Collares</a></li>
-                        <li><a href="#">Conjuntos</a></li>
-                        <li><a href="#">Anillos</a></li>
-                        <li><a href="#">Aretes</a></li>
+                        <li><a href="shop.html?cat=pulseras">Pulseras</a></li>
+                        <li><a href="shop.html?cat=collares">Collares</a></li>
+                        <li><a href="shop.html?cat=conjuntos">Conjuntos</a></li>
+                        <li><a href="shop.html?cat=anillos">Anillos</a></li>
+                        <li><a href="shop.html?cat=aretes">Aretes</a></li>
                     </ul>
                 </div>
 

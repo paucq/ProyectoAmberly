@@ -341,3 +341,46 @@ h1, h2, h3, .logo {
     font-size: 0.9rem;
     color: #555;
 }
+
+/* =========================
+   FILTRO CATEGORÍAS TIENDA
+========================= */
+
+/* Links del sidebar */
+#category-filter .category-link {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+    color: #333;
+    font-size: 1.05rem;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#category-filter .category-link:hover {
+    color: var(--amberly-gold);
+    border-left-color: var(--amberly-gold);
+}
+
+/* Estado activo */
+#category-filter .category-link.active {
+    color: var(--amberly-gold);
+    font-weight: 600;
+    border-left-color: var(--amberly-gold);
+    background-color: rgba(200, 178, 115, 0.08);
+}
+
+/* Estado vacío */
+.shop-empty-message {
+    text-align: center;
+    padding: 60px 20px;
+    color: #999;
+    font-size: 1.1rem;
+}
+
+.shop-empty-message i {
+    font-size: 2.5rem;
+    display: block;
+    margin-bottom: 16px;
+    color: #ccc;
+}
